@@ -298,3 +298,48 @@ footer {
     height: 150px;
     border-radius: 50%;
 }
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em; /* Smaller font size for the header */
+    }
+
+    .navigation {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Adjust height */
+        position: static; /* Prevent fixed positioning on mobile */
+        padding-top: 10px;
+    }
+
+    .navigation ul {
+        flex-direction: row; /* Change to horizontal for mobile */
+        justify-content: space-around;
+    }
+
+    .navigation ul li {
+        margin: 10px; /* Smaller margin for mobile */
+    }
+
+    main {
+        margin-left: 0; /* Remove left margin on mobile */
+        padding: 10px;
+    }
+
+    .content, .content2, .content3 {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        gap: 10px; /* Reduce gap between elements */
+    }
+
+    .video video, .video3 video {
+        width: 100%; /* Make video full width on mobile */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stack footer content vertically */
+        align-items: center; /* Center align for mobile */
+    }
+
+    .unique {
+        width: 100%; /* Full width for mobile */
+        margin-left: 0; /* Remove margin on mobile */
+    }
+}
